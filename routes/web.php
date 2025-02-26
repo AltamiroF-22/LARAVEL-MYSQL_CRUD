@@ -17,3 +17,5 @@ Route::post('/product', [ProductController::class, 'store'])->name('product.stor
 Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit');
 // Atualizar produto
 Route::put('/product/{product}', [ProductController::class, 'update'])->name('product.update'); 
+//Deletar produto
+Route::delete('/product/{product}', [ProductController::class, 'destroy'])->name('product.destroy'); 
